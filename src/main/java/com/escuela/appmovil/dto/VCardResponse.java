@@ -13,6 +13,7 @@ public class VCardResponse {
     private String ubicacionEmpresa;
     private String correo;
     private String urlEmpresa;
+    private String cargoEng;
 
     // Constructor vacío
     public VCardResponse() {}
@@ -21,7 +22,7 @@ public class VCardResponse {
     public VCardResponse(String nombre, String empresa, String cargo, String telefono,
                          String telefonoEmpresa, String ext, String oficina,
                          String direccionEmpresa, String ubicacionEmpresa,
-                         String correo, String urlEmpresa) {
+                         String correo, String urlEmpresa, String cargoEng) {
         this.nombre = nombre;
         this.empresa = empresa;
         this.cargo = cargo;
@@ -33,6 +34,7 @@ public class VCardResponse {
         this.ubicacionEmpresa = ubicacionEmpresa;
         this.correo = correo;
         this.urlEmpresa = urlEmpresa;
+        this.cargoEng = cargoEng;
     }
 
     // Getters y Setters
@@ -124,4 +126,14 @@ public class VCardResponse {
     public void setUrlEmpresa(String urlEmpresa) {
         this.urlEmpresa = urlEmpresa;
     }
+
+	public String getCargoEng() {
+		return cargoEng;
+	}
+
+	public void setCargoEng(String cargoEng) {
+		this.cargoEng = cargoEng;
+	}
+    
+    
 }

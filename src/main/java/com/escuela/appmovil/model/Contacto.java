@@ -42,6 +42,9 @@ public class Contacto {
 
     @Column(nullable = false)
     private String correo;
+    
+    @Column(nullable = false)
+    private String cargoEng;
 
     public Contacto() {}
 
@@ -57,4 +60,6 @@ public class Contacto {
     public String getUbicacionEmpresa() { return ubicacionEmpresa; }
     public String getUrlEmpresa() { return urlEmpresa; }
     public String getCorreo() { return correo; }
+    public String getCargoEng() { return cargoEng; }
+    
 }

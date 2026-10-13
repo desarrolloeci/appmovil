@@ -38,7 +38,8 @@ public class ContactoService {
                 c.getDireccionEmpresa(),
                 c.getUbicacionEmpresa(),
                 c.getCorreo(),
-                c.getUrlEmpresa()
+                c.getUrlEmpresa(),
+                c.getCargoEng()
         );
     }
     
