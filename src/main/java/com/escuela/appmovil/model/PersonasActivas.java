@@ -1,10 +1,10 @@
 package com.escuela.appmovil.model;
 
-
 import jakarta.persistence.*;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "personas_activas")
@@ -19,23 +19,28 @@ public class PersonasActivas {
     private String email;
 
     @Column(name = "tipo_documento")
+    @JsonProperty("tipo_documento")
     private String tipoDocumento;
 
     @Column(name = "nro_documento")
+    @JsonProperty("nro_documento")
     private String nroDocumento;
 
     private String emplid;
 
     @Column(name = "tipo_rol")
+    @JsonProperty("tipo_rol")
     private String tipoRol;
 
     private String estado;
 
     @Column(name = "fecha_nacimiento")
+    @JsonProperty("fecha_nacimiento")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-private LocalDate fechaNacimiento;
+    private LocalDate fechaNacimiento;
 
     @Column(name = "cod_area")
+    @JsonProperty("cod_area")
     private String codArea;
 
     private String area;
@@ -43,31 +48,38 @@ private LocalDate fechaNacimiento;
     private String grado;
 
     @Column(name = "ciclo_descr")
+    @JsonProperty("ciclo_descr")
     private String cicloDescr;
 
     private String semestre;
 
     @Column(name = "primer_nombre")
+    @JsonProperty("primer_nombre")
     private String primerNombre;
 
     @Column(name = "segundo_nombre")
+    @JsonProperty("segundo_nombre")
     private String segundoNombre;
 
     @Column(name = "primer_apellido")
+    @JsonProperty("primer_apellido")
     private String primerApellido;
 
     @Column(name = "segundo_apellido")
+    @JsonProperty("segundo_apellido")
     private String segundoApellido;
 
     @Column(name = "categoria_profesor")
+    @JsonProperty("categoria_profesor")
     private String categoriaProfesor;
 
     private String telefono;
     private String direccion;
 
     @Column(name = "fecha_vigencia")
+    @JsonProperty("fecha_vigencia")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
-private LocalDate fechaVigencia;
+    private LocalDate fechaVigencia;
 
     // ====== Getters y Setters ======
 
