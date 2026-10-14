@@ -81,7 +81,7 @@ public class PersonasActivas {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate fechaVigencia;
 
-    // ====== Getters y Setters ======
+    // ====== Getters modificados para evitar nulls en el frontend ======
 
     public Long getId() {
         return id;
@@ -92,7 +92,7 @@ public class PersonasActivas {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombre != null ? nombre : "";
     }
 
     public void setNombre(String nombre) {
@@ -100,7 +100,7 @@ public class PersonasActivas {
     }
 
     public String getSexo() {
-        return sexo;
+        return sexo != null ? sexo : "";
     }
 
     public void setSexo(String sexo) {
@@ -108,7 +108,7 @@ public class PersonasActivas {
     }
 
     public String getEmail() {
-        return email;
+        return email != null ? email : "";
     }
 
     public void setEmail(String email) {
@@ -116,7 +116,7 @@ public class PersonasActivas {
     }
 
     public String getTipoDocumento() {
-        return tipoDocumento;
+        return tipoDocumento != null ? tipoDocumento : "";
     }
 
     public void setTipoDocumento(String tipoDocumento) {
@@ -124,7 +124,7 @@ public class PersonasActivas {
     }
 
     public String getNroDocumento() {
-        return nroDocumento;
+        return nroDocumento != null ? nroDocumento : "";
     }
 
     public void setNroDocumento(String nroDocumento) {
@@ -132,7 +132,7 @@ public class PersonasActivas {
     }
 
     public String getEmplid() {
-        return emplid;
+        return emplid != null ? emplid : "";
     }
 
     public void setEmplid(String emplid) {
@@ -140,7 +140,7 @@ public class PersonasActivas {
     }
 
     public String getTipoRol() {
-        return tipoRol;
+        return tipoRol != null ? tipoRol : "";
     }
 
     public void setTipoRol(String tipoRol) {
@@ -148,7 +148,7 @@ public class PersonasActivas {
     }
 
     public String getEstado() {
-        return estado;
+        return estado != null ? estado : "";
     }
 
     public void setEstado(String estado) {
@@ -164,7 +164,7 @@ public class PersonasActivas {
     }
 
     public String getCodArea() {
-        return codArea;
+        return codArea != null ? codArea : "";
     }
 
     public void setCodArea(String codArea) {
@@ -172,7 +172,7 @@ public class PersonasActivas {
     }
 
     public String getArea() {
-        return area;
+        return area != null ? area : "";
     }
 
     public void setArea(String area) {
@@ -180,7 +180,7 @@ public class PersonasActivas {
     }
 
     public String getCiclo() {
-        return ciclo;
+        return ciclo != null ? ciclo : "";
     }
 
     public void setCiclo(String ciclo) {
@@ -188,7 +188,7 @@ public class PersonasActivas {
     }
 
     public String getGrado() {
-        return grado;
+        return grado != null ? grado : "";
     }
 
     public void setGrado(String grado) {
@@ -196,7 +196,7 @@ public class PersonasActivas {
     }
 
     public String getCicloDescr() {
-        return cicloDescr;
+        return cicloDescr != null ? cicloDescr : "";
     }
 
     public void setCicloDescr(String cicloDescr) {
@@ -204,7 +204,7 @@ public class PersonasActivas {
     }
 
     public String getSemestre() {
-        return semestre;
+        return semestre != null ? semestre : "";
     }
 
     public void setSemestre(String semestre) {
@@ -212,7 +212,7 @@ public class PersonasActivas {
     }
 
     public String getPrimerNombre() {
-        return primerNombre;
+        return primerNombre != null ? primerNombre : "";
     }
 
     public void setPrimerNombre(String primerNombre) {
@@ -220,7 +220,7 @@ public class PersonasActivas {
     }
 
     public String getSegundoNombre() {
-        return segundoNombre;
+        return segundoNombre != null ? segundoNombre : "";
     }
 
     public void setSegundoNombre(String segundoNombre) {
@@ -228,7 +228,7 @@ public class PersonasActivas {
     }
 
     public String getPrimerApellido() {
-        return primerApellido;
+        return primerApellido != null ? primerApellido : "";
     }
 
     public void setPrimerApellido(String primerApellido) {
@@ -236,7 +236,7 @@ public class PersonasActivas {
     }
 
     public String getSegundoApellido() {
-        return segundoApellido;
+        return segundoApellido != null ? segundoApellido : "";
     }
 
     public void setSegundoApellido(String segundoApellido) {
@@ -244,7 +244,7 @@ public class PersonasActivas {
     }
 
     public String getCategoriaProfesor() {
-        return categoriaProfesor;
+        return categoriaProfesor != null ? categoriaProfesor : "";
     }
 
     public void setCategoriaProfesor(String categoriaProfesor) {
@@ -252,7 +252,7 @@ public class PersonasActivas {
     }
 
     public String getTelefono() {
-        return telefono;
+        return telefono != null ? telefono : "";
     }
 
     public void setTelefono(String telefono) {
@@ -260,7 +260,7 @@ public class PersonasActivas {
     }
 
     public String getDireccion() {
-        return direccion;
+        return direccion != null ? direccion : "";
     }
 
     public void setDireccion(String direccion) {
